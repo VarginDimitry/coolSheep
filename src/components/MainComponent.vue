@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import SheepComponent from './SheepComponent.vue';
-import PistonComponent from './PistonComponent.vue';
-import EndRodComponent from './EndRodComponent.vue';
+import SheepComponent from './SheepComponent.vue'
+import PistonComponent from './PistonComponent.vue'
+import EndRodComponent from './EndRodComponent.vue'
 
 defineProps<{
   isActive: boolean
-}>();
+}>()
 </script>
 
 <template>
   <div class="main-component">
-    <SheepComponent class="minecraft sheep" :isActive="isActive"/>
-    <PistonComponent class="minecraft piston" :isActive="isActive"/>
+    <SheepComponent class="minecraft sheep" :isActive="isActive" />
+    <PistonComponent class="minecraft piston" :isActive="isActive" />
     <EndRodComponent
       class="minecraft end-rod"
-      :class="{'active-rod': isActive}"
+      :class="{ 'active-rod': isActive }"
       :isActive="isActive"
     />
   </div>

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 defineProps<{
   isActive: boolean
-}>();
+}>()
 </script>
 
 <template>
   <div class="end-rod-component">
-    <img src="/coolsheep/end_rod.png">
+    <img src="/coolSheep/end_rod.png" />
   </div>
 </template>
 

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 defineProps<{
   isActive: boolean
-}>();
+}>()
 </script>
 
 <template>
   <div class="sheep-component">
-    <img src="/coolsheep/sheep.png">
+    <img src="/coolSheep/sheep.png" />
   </div>
 </template>
 

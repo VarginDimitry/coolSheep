@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 const props = defineProps<{
   isActive: boolean
-}>();
-const fileName = computed(() => props.isActive ? 'pistones_active.png' : 'pistones_disabled.png');
+}>()
+const fileName = computed(() => (props.isActive ? 'pistones_active.png' : 'pistones_disabled.png'))
 </script>
 
 <template>
   <div class="piston-component">
-    <img :src="`/coolsheep/${fileName}`">
+    <img :src="`/coolSheep/${fileName}`" />
   </div>
 </template>
 

@@ -1,31 +1,26 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-import MainComponent from './components/MainComponent.vue';
+import { ref, watch } from 'vue'
+import MainComponent from './components/MainComponent.vue'
 
-const isActive = ref(false);
+const isActive = ref(false)
 
 watch(isActive, (newValue: boolean) => {
   if (newValue) {
-    const pistonAudio = new Audio('/coolsheep/piston_extend.ogg');
-    pistonAudio.play();
+    const pistonAudio = new Audio('/coolSheep/piston_extend.ogg')
+    pistonAudio.play()
   } else {
-    const pistonAudio = new Audio('/coolsheep/piston_less.ogg');
-    pistonAudio.play();
+    const pistonAudio = new Audio('/coolSheep/piston_less.ogg')
+    pistonAudio.play()
   }
   if (newValue) {
-    const sheepAudio = new Audio('/coolsheep/sheep.mp3');
-    sheepAudio.play();
+    const sheepAudio = new Audio('/coolSheep/sheep.mp3')
+    sheepAudio.play()
   }
-});
-
+})
 </script>
 
 <template>
-  <div
-    class="main"
-    :class="{ active: isActive }"
-    @click="isActive = !isActive"
-  >
+  <div class="main" :class="{ active: isActive }" @click="isActive = !isActive">
     <MainComponent :isActive="isActive" />
   </div>
 </template>
