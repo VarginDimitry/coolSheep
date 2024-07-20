@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="end-rod-component">
-    <img src="/coolSheep/end_rod.png" />
+    <img src="/end_rod.png" />
   </div>
 </template>
 

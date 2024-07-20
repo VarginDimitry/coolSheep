@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="sheep-component">
-    <img src="/coolSheep/sheep.png" />
+    <img src="/sheep.png" />
   </div>
 </template>
 
