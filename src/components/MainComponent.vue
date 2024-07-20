@@ -25,7 +25,6 @@ defineProps<{
   width: 320px;
   height: 320px;
   margin: auto;
-  border: 1px solid black;
 }
 .minecraft {
   position: relative;
