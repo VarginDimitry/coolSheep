@@ -6,10 +6,10 @@ const isActive = ref(false)
 
 watch(isActive, (newValue: boolean) => {
   if (newValue) {
-    const pistonAudio = new Audio('/coolSheep/piston_extend.ogg')
+    const pistonAudio = new Audio('/coolSheep/piston_extend.mp3')
     pistonAudio.play()
   } else {
-    const pistonAudio = new Audio('/coolSheep/piston_less.ogg')
+    const pistonAudio = new Audio('/coolSheep/piston_less.mp3')
     pistonAudio.play()
   }
   if (newValue) {
